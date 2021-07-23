@@ -141,7 +141,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     let url = client.get_server_pack_url(pack.id as u32, file).unwrap();
     println!(
-        "Downloading server file `{}` from `{}`",
+        "Downloading server file `{}` from `{}`.",
         file.file_name, url
     );
     utils::download_server_pack(client, &url[..], outfile).expect("Error downloading file");
