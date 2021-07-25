@@ -98,7 +98,7 @@ pub struct LatestFile {
     pub game_version_id: i64,
     pub game_id: i64,
     pub is_server_pack: bool,
-    pub server_pack_file_id: i64,
+    pub server_pack_file_id: Option<i64>,
     pub game_version_flavor: ::serde_json::Value,
 }
 
@@ -175,7 +175,7 @@ pub struct PackFileData {
     pub package_fingerprint: i64,
     pub game_version: Vec<String>,
     pub install_metadata: ::serde_json::Value,
-    pub server_pack_file_id: i64,
+    pub server_pack_file_id: Option<i64>,
     pub has_install_script: bool,
     pub game_version_date_released: String,
     pub game_version_flavor: ::serde_json::Value,

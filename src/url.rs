@@ -108,7 +108,9 @@ impl Client {
     ) -> Result<String, reqwest::Error> {
         let url = format!(
             "{}/addon/{}/file/{}/download-url",
-            BASE_URL, project_id, file.server_pack_file_id
+            BASE_URL,
+            project_id,
+            file.server_pack_file_id.unwrap()
         );
 
         self.client.get(url).send()?.text()

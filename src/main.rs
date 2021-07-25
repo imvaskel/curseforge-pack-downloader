@@ -139,6 +139,14 @@ fn main() -> Result<(), Box<dyn Error>> {
         }
     }
 
+    match file.server_pack_file_id {
+        Some(_) => (),
+        None => {
+            println!("Pack version does not have a server file attached.");
+            return Ok(());
+        }
+    }
+
     let url = client.get_server_pack_url(pack.id as u32, file).unwrap();
     println!(
         "Downloading server file `{}` from `{}`.",
