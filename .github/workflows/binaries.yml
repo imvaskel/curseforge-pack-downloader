@@ -12,10 +12,8 @@ jobs:
       fail-fast: false
       matrix:
         arch:
-          - { target: aarch64-unknown-linux-gnu , use-cross: true, name: curseforge-pack-downloader-linux-aarch64 }
           - { target: i686-unknown-linux-gnu , use-cross: true, name: curseforge-pack-downloader-linux-i686 }
           - { target: x86_64-pc-windows-gnu , use-cross: true, name: curseforge-pack-downloader-windows}
-          - { target: aarch64-linux-android, use-cross: true, name: curseforge-pack-downloader-android}
           - { target: x86_64-unknown-linux-gnu, name: curseforge-pack-downloader-linux }
     steps:
       - uses: actions/checkout@v2
