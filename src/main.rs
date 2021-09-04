@@ -50,7 +50,7 @@ async fn download_file(client: &reqwest::Client, url: &str, path: &str) -> Resul
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let matches = App::new("Curseforge Pack Downloader")
-        .version("1.2")
+        .version(crate_version!())
         .author("Vaskel (contact@vaskel.xyz)")
         .about("Downloads server packs from curseforge.")
         .arg(
