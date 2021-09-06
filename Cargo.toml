@@ -1,7 +1,7 @@
 [package]
 edition = "2018"
 name = "curseforge-pack-downloader"
-version = "2.0.1"
+version = "2.0.2"
 
 [dependencies]
 bytes = "1.1.0"
