@@ -7,7 +7,7 @@ This is a server pack downloader for minecraft CurseForge.
 You can see all the arguments and what they do by using the ``--help`` parameter.
 
 # Example
-<img src="media/example.gif">
+![example usage](media/example.gif)
 
 # Compiling
 Clone the repo and then run `cargo build --release`.
